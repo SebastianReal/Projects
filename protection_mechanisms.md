@@ -4,22 +4,43 @@
 The Open Systems Interconnection (OSI) model serves as a conceptual framework that categorizes network communication functions into seven distinct layers. This model establishes a universal language for computer networking, facilitating communication between various technologies. It encapsulates all forms of network communication across both software and hardware components. In essence, the OSI model provides a structured and comprehensive approach to networking, ensuring interoperability and standardized communication across diverse devices and applications.
 
 ## Application Layer – Implementation of Web Application Firewall
-Web applications receive protection through a Web Application Firewall (WAF), which filters and monitors HTTP traffic between the application and the Internet. Positioned in front of the web application, a shield is established between it and the Internet, safeguarding the server from exposure as clients pass through the WAF before reaching the server. Policies are utilized by the WAF to protect against vulnerabilities in the application by filtering out malicious traffic. The value of the WAF is derived, in part, from the swift and straightforward implementation of policy modifications, allowing for a prompt response to various attack vectors. Web applications are typically defended against attacks such as cross-site forgery, cross-site scripting (XSS), file inclusion, and SQL injection, among others, using WAF.
+  - Filters HTTP traffic between the web application and the internet
+  - Protects against attacks like cross-site scripting and SQL injection
+  - Allows quick policy modifications to respond to new threats
+  - Acts as a shield between the server and potential malicious traffic
 
 ## Presentation Layer – Implementation of Encryption Protocols
-This layer plays a crucial role in ensuring that information from the application layer is comprehensible across various systems and can be smoothly transmitted over a network. Here, data undergoes encoding and formatting into a standardized structure that different systems can easily interpret. Implementing secure protocols is essential for safeguarding this layer, with SSL and TLS being prominent examples. These protocols employ both asymmetric and symmetric encryption to ensure the confidentiality and integrity of data during transit. Asymmetric encryption establishes a connection between a client and a server, while symmetric encryption is employed for secure data exchange within the established connection. For a website to utilize these secure protocols, it needs an SSL/TLS certificate associated with its web server/domain name, enabling the use of SSL/TLS encryption.
+  - Encodes and formats data for different system compatibility
+  - Uses SSL/TLS for secure data transmission
+  - Employs both asymmetric and symmetric encryption
+  - Requires an SSL/TLS certificate for secure communication
 
 ## Session Layer – Restrict Failed Session Attempts
-The session layer handles the beginning and end of a one-to-one application connection. To secure this layer, it's crucial to implement measures that restrict failed session attempts and introduce timing methods for session protection. This helps prevent unauthorized access and potential session hijacking. A widely used tool for this purpose is Fail2ban, written in Python. It's designed to prevent brute-force attacks by scanning log files and banning IPs showing malicious signs, such as too many authentication attempts or scanning for vulnerabilities. Generally, Fail2ban is used to update firewall rules to reject the IP addresses for a specified amount of time, although any other arbitrary action could also be configured.
+  - Manages the beginning and end of application connections
+  - Uses Fail2ban to prevent brute-force attacks
+  - Bans IP addresses with suspicious authentication attempts
+  - Helps prevent unauthorized access and session hijacking
 
 ## Transport Layer – DDoS Protection and Mitigation Services
-The primary role of the transport layer is to guarantee the orderly arrival of data packets, ensuring they reach their destination without losses or errors, and facilitating seamless recovery if needed. Flow control, along with error control, receives considerable attention within the transport layer. Cloudflare serves as a cloud-based DDoS protection system designed to address layer 4 attacks. Cloudflare's approach involves employing dedicated anti-DDoS hardware, with each machine in its global network participating in DDoS mitigation efforts. The DDoS protection provided by Cloudflare not only safeguards websites, applications, and entire networks but also ensures that the performance of legitimate traffic remains uncompromised. The "Always-on" feature is pivotal as it proactively prevents incidents by continually analyzing network traffic, making policy adjustments in response to emerging attack patterns, and leveraging a vast and dependable network of data centers.
+  - Ensures orderly arrival of data packets
+  - Cloudflare provides cloud-based DDoS protection
+  - Uses dedicated anti-DDoS hardware
+  - Maintains the performance of legitimate network traffic
 
 ## Network Layer – IDS/IPS Implementation
-The network layer deals with concepts like routing, forwarding, and addressing across a network or multiple connected networks. It also handles flow control. Intrusion detection systems (IDS) and intrusion prevention systems (IPS) constantly monitor the network, identifying potential incidents, stopping them, and reporting to security administrators. Additionally, IDS/IPS is useful for finding issues with security policies and discouraging violations. To properly set up these systems, the first step is to identify critical assets and create network segmentation zones to group assets with similar security requirements. Then, install IDS/IPS sensors at key points, such as between network segments or entry/exit points. Finally, establish managed IDS/IPS services to ensure devices are tuned and up-to-date, offering comprehensive visibility into emerging threats.
+  - Monitors the network for potential security incidents
+  - Identifies and stops potential security threats
+  - Creates network segmentation zones
+  - Provides visibility into emerging security risks
 
 ## Data Link Layer – MACsec Implementation
-The data link layer refers to the technologies used to connect two machines across a network where the physical layer already exists. It manages data frames, which are digital signals encapsulated into data packets. Implementing MACsec (Media Access Control Security) correctly in the network involves configuring supported network devices and ensuring compatibility across the network infrastructure. All network devices, including switches and routers, need to have the MACsec feature. Then determine the key server for MACsec. The key server is responsible for distributing keys to devices participating in MACsec. After that configure the MACsec feature on the switch ports that need to be secured. This typically involves enabling MACsec on individual ports and specifying the encryption settings. Finally, verify the operation of MACsec on the network. Check the status of MACsec on switch ports, ensuring that it is active and using the correct security parameters.
+ - Connects machines across a network
+ - Requires compatible network devices
+ - Uses a key server for distributing encryption keys
+ - Secures network communication at the data link level
 
 ## Physical Layer – Video Surveillance
-The physical layer pertains to the actual communication medium, and the technologies utilized for data transmission. Unfortunately, physical security often receives less emphasis compared to network security, with a predominant focus on potential data loss from cyberattacks and breaches. While physical attacks may not be as prevalent as cyber threats, they still pose genuine risks to data security. To shield the network from physical threats, it's essential to incorporate certain physical security measures, such as video surveillance. To set up video surveillance effectively, the initial step involves selecting top-tier, customizable IP cameras with features like high-definition video recording and motion detection. Assessing power and connectivity requirements, especially for remote or temporary sites, is crucial. Ensuring that surveillance units have the necessary power supply, such as 110 VAC or autonomous options like solar power, comes next. Subsequently, opting for a system that facilitates centralized control and monitoring across various locations reduces the administrative burden for security monitoring teams. Finally, careful consideration of the specific areas needing surveillance and the intended use of the surveillance images guides the planning and deployment process.
+  - Focuses on physical security measures
+  - Uses high-definition IP cameras
+  - Considers power and connectivity requirements
+  - Enables centralized monitoring and control
