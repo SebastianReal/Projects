@@ -1,4 +1,4 @@
-# Laboratory - Roconnaissance and Gathering information 
+# Laboratory - Reconnaissance and Gathering Information 
 
 ## Task 1
 Choose any large public company or organization (except SLC) and use the reconnaissance techniques (various websites and tools, social media etc.)
@@ -10,7 +10,7 @@ Reconnaissance:
 
 Reconnaissance refers to the process of collecting information and intelligence about a specific target. In cybersecurity, the targets are commonly computer systems, networks, or specific groups of people. This constitutes the initial step taken by threat actors to gather information about the target, which can be done actively or passively.
 
-Starting with the reconnaissance phase the tool hunter.io makes gathering sensitive information much easier because the tool provides many results with only one search. Following the search of the domain.
+Starting with the reconnaissance phase, the tool hunter.io makes gathering sensitive information much easier because the tool provides many results with only one search. Following the search of the domain.
 
 <img src="https://github.com/user-attachments/assets/a6b47570-2059-442f-a0ab-b63073738003" width="500"><br>
 Figure 1. Search on the hunter.io website. <br/><br/>
