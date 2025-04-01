@@ -19,12 +19,12 @@ Figure 1. Search on the hunter.io website. <br/><br/>
 In the image above, it is notable that 685 corporate email accounts are exposed on the internet and may be easily found by third parties with no connections to the bank. Additionally, sometimes the search can reveal a person’s job, which is highly inconvenient from an information security perspective. 
 
 
-The previous one was the first step when it comes to gathering information; now that names, positions, and emails are known, social media is the next step. Everybody these days has either social network accounts to share moments with close people or social media accounts for business/professional growth. However, this information can be seen by everybody and among those there might be threat actors.
+The previous one was the first step when it comes to gathering information; now that names, positions, and emails are known, social media is the next step. Everybody these days has either social network accounts to share moments with close people or social media accounts for business/professional growth. However, this information can be seen by everybody and among those, there might be threat actors.
 
 Below is an example of the information, such as social media webpages, public records, and phone numbers, that can be extracted with one search on the website peekyou.com about Capital One’s Vice President. 
 
 <img src="https://github.com/user-attachments/assets/601b252f-9737-4524-aeeb-57b2fd3a202f" width="500"><br>
-Figure 2. Results for Andre Sherry who lives in New York. <br/><br/>
+Figure 2. Results for Andrew Sherry, who lives in New York. <br/><br/>
 
 
 <img src="https://github.com/user-attachments/assets/86eac0c9-2962-4c28-95fe-d52101af7bb0" width="500"><br>
