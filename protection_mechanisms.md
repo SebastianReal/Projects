@@ -11,7 +11,6 @@ The Open Systems Interconnection (OSI) model serves as a conceptual framework th
     
   <img src="https://github.com/user-attachments/assets/27d80c21-4877-4834-a655-70f964519b6b" width="550">
   
-
 ## Presentation Layer – Implementation of Encryption Protocols
   - Encodes and formats data for different system compatibility
   - Uses SSL/TLS for secure data transmission
@@ -19,7 +18,6 @@ The Open Systems Interconnection (OSI) model serves as a conceptual framework th
   - Requires an SSL/TLS certificate for secure communication
 
     <img src="https://github.com/user-attachments/assets/f4745b22-129f-4aea-a6cd-b1db9f9f7b3d" width="550">
-
 
 ## Session Layer – Restrict Failed Session Attempts
   - Manages the beginning and end of application connections
@@ -54,9 +52,9 @@ The Open Systems Interconnection (OSI) model serves as a conceptual framework th
   <img src="https://github.com/user-attachments/assets/3e4601dc-468f-4439-b51f-1f81b459ed04" width="550">
 
 ## Physical Layer – Video Surveillance
-  - Focuses on physical security measures
-  - Uses high-definition IP cameras
-  - Considers power and connectivity requirements
-  - Enables centralized monitoring and control
+ - Focuses on physical security measures
+ - Uses high-definition IP cameras
+ - Considers power and connectivity requirements
+ - Enables centralized monitoring and control
 
   <img src="https://github.com/user-attachments/assets/bbd72885-bc22-417a-bfd7-dcd7d5d070c4" width="550">
