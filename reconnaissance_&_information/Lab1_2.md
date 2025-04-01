@@ -10,3 +10,37 @@ The bank has 750 branches and 2,000 ATMs. Capital One Bank has three main divisi
 The company holds $114 billion in loans receivable from credit cards, $75 billion from auto loans, and $85 billion from commercial loans. 
 (Public information extracted from the internet).<br/>
 Figure 1 displays many names that can be used to gather personal information about those people. Below are many examples of searches on Google and social media.
+<br/>
+
+<img src="https://github.com/user-attachments/assets/165cd15a-ab23-4f3b-b496-d6f50330273f" width="550"><br/>
+Figure 1. Google search for Sr. Pitre. <br/><br/>
+
+<img src="https://github.com/user-attachments/assets/a38c9f68-2b20-4918-8723-52ed13454082" width="550"><br/>
+Figure 2. Nelson Pitre’s LinkedIn profile. <br/><br/>
+
+<img src="https://github.com/user-attachments/assets/1a5097c3-82db-4edf-a88f-79b472d54ade" width="550"><br/>
+Figure 3. Nelson Pitre’s LinkedIn profile. <br/><br/>
+
+
+Figures 2 and 3 display important information about Nelson Pitre. Although there is no face visible, an assumption can be made based on the experience field, which matches the profile of the person being searched for.<br/>
+
+
+<img src="https://github.com/user-attachments/assets/96c1390f-ae32-4e29-b11d-275ea6ce5fa8" width="550"><br/>
+Figure 4. Jeff Sharp’s LinkedIn profile.<br/><br/>
+
+Figure 4 displays essential information about Jeff Sharp. Although there is no visible face, an assumption can be made based on the experience field, which matches the profile of the person being searched for. This individual has limited information in their profile, but can be contacted through a messaging service, which could potentially be exploited in a phishing attack. <br/>
+
+<img src="https://github.com/user-attachments/assets/566d1ef8-9a34-4fd6-9fe8-1897d9e883a3" width="550"><br/>
+Figure 5. David Harper’s LinkedIn profile. <br/><br/>
+
+<img src="https://github.com/user-attachments/assets/bf5114a6-a5ff-4d96-ba1c-03860ee152ab" width="550"><br/>
+Figure 6. David Harper’s LinkedIn profile. <br/><br/>
+
+Figures 5 and 6 display information about David Harper throughout his life and his face. All this information may be used to clone the profile and deceive people.<br/>
+All this information may seem superficial, but that is what reconnaissance is all about: gathering as much information as possible and, with the correct social engineering, carrying out a powerful attack. During this stage, assumptions are allowed due to the high likelihood that a threat actor does not know all the correct information. Below, an assumption will be made about the hierarchy of the company with the elements that were collected. <br/>
+
+
+
+
+
+<img src="" width="550">
