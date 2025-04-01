@@ -39,8 +39,10 @@ Figure 6. David Harper’s LinkedIn profile. <br/><br/>
 Figures 5 and 6 display information about David Harper throughout his life and his face. All this information may be used to clone the profile and deceive people.<br/>
 All this information may seem superficial, but that is what reconnaissance is all about: gathering as much information as possible and, with the correct social engineering, carrying out a powerful attack. During this stage, assumptions are allowed due to the high likelihood that a threat actor does not know all the correct information. Below, an assumption will be made about the hierarchy of the company with the elements that were collected. <br/>
 
+<img src="https://github.com/user-attachments/assets/6159383b-8153-41b1-818e-0c2bb60a7042" width="550"><br/>
+Figure 7. Assumption of hierarchy of Capital One (example).<br/><br/>
+
+All the information mentioned before may be used to carry out a cyberattack. It’s important to highlight that all the information must be studied carefully, and the reconnaissance stage takes time due to the fact that the better the assumption is, the more probable the cyberattack will be. <br/>
+If I were a threat actor, I would study every aspect of their information available, and I would take advantage of free hacking tools available on the internet to carry out a phishing attack. Whereas I would be gathering information, I would also be preparing the ‘weapon’. It is an email with a virus attached to it. Once the weapon is ready and the target fully studied, the email will be sent; important people have assistants who oversee replying to emails and organizing schedules. Most of the time, assistants do not have the correct training on cybersecurity threats, and they likely fall into the trap. In this hypothetical situation, the next stage would be privilege escalation, which must be easier due to the virus that is already within the system. I would also take advantage of the fear that financial institutions have when it comes to stealing sensitive information because they could lose the trust of their customers, and they might decide to pay a ransom rather than expose the case to the authorities."
 
 
-
-
-<img src="" width="550">
