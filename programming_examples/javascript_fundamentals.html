@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom styles to enhance Bootstrap -->
+    <style>
+        .code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #e83e8c;
+        }
+        
+        .section-title {
+            border-left: 4px solid #0d6efd;
+            padding-left: 10px;
+        }
+        
+        .highlight-js {
+            color: #0d6efd;
+            font-weight: 600;
+        }
+    </style>
+
+    <!--
+        <script src="js/exercise01.js"></script>
+        <script src="js/exercise02.js"></script>
+        <script src="js/exercise03.js"></script>
+        <script src="js/exercise04.js"></script>
+        <script src="js/exercise05.js"></script>
+        <script src="js/exercise06.js"></script>
+        <script src="js/exercise07.js"></script>
+        <script src="js/exercise08.js"></script>
+        <script src="js/exercise09.js"></script>
+        <script src="js/exercise10.js"></script>
+        <script src="js/exercise11.js"></script>
+        <script src="js/exercise12.js"></script>
+    -->
+    <script src="js/exercise13.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-filetype-js me-2"></i>
+                JavaScript Guide
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-4">JavaScript Application</h1>
+                        <p class="lead text-center">A comprehensive guide to JavaScript basics</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-light">
+                        <h3 class="section-title">JavaScript Basics</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><code class="code">script</code> is the necessary tag to place JavaScript in the page</li>
+                            <li class="list-group-item">To import a JS file, use the <code class="code">src</code> attribute in the tag</li>
+                            <li class="list-group-item"><code class="code">console.log(varName)</code> to request information from the console about a variable</li>
+                            <li class="list-group-item"><code class="code">console.log(varName)</code> also serves to display information from the code to the console</li>
+                            <li class="list-group-item">To concatenate strings, use the <code class="code">+</code> followed by a single quote</li>
+                            <li class="list-group-item"><code class="code">'use strict'</code> - the strict mode of JS goes at the beginning of files and helps us program in a better way</li>
+                            <li class="list-group-item"><code class="code">VAR varName = something</code> to create variables, use the reserved word <code class="code">var</code> although <code class="code">LET</code> is also used</li>
+                            <li class="list-group-item">The difference between <code class="code">var</code> and <code class="code">let</code> is that <code class="code">let</code> declares or modifies the variable within a code block "limited scope" and <code class="code">var</code> allows updating regardless of whether it is in a block or not "declares it globally"</li>
+                            <li class="list-group-item"><code class="code">const</code> constant is like a variable but without being able to modify the data at any point in the program</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-light">
+                        <h3 class="section-title">Methods and Functions</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Method/Function</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code class="code">alert()</code></td>
+                                        <td>Creates an alert in JS where a string is passed</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">document.write()</code></td>
+                                        <td>Renders text in the document</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">Number()</code> / <code class="code">parseInt()</code> / <code class="code">parseFloat()</code></td>
+                                        <td>Transforms a string to int or float</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">object.toString()</code></td>
+                                        <td>Transforms a number or character to string</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">String()</code></td>
+                                        <td>Converts any variable to string</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">typeof variable</code></td>
+                                        <td>Returns the data type of a variable</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">debugger;</code></td>
+                                        <td>Debugs the program step by step</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">confirm()</code></td>
+                                        <td>Creates a confirmation alert</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">prompt()</code></td>
+                                        <td>Inputs data in an alert, receives two parameters: text and default value</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="code">isNaN(variable)</code></td>
+                                        <td>Checks if letters and not numbers were entered</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-light">
+                        <h2 class="section-title">JavaScript Concepts Explained</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="jsConceptsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="bi bi-code-square me-2"></i> Variables and Data Types
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#jsConceptsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><span class="highlight-js">var</span>: Declares a variable globally or locally to an entire function regardless of block scope</li>
+                                            <li class="list-group-item"><span class="highlight-js">let</span>: Declares a block-scoped local variable, optionally initializing it to a value</li>
+                                            <li class="list-group-item"><span class="highlight-js">const</span>: Creates a read-only reference to a value, block-scoped like let</li>
+                                            <li class="list-group-item"><span class="highlight-js">Data Types</span>: JavaScript has various data types including:
+                                                <ul class="mt-2">
+                                                    <li>Numbers: Integer or floating-point (e.g., <code class="code">44</code>, <code class="code">40.5</code>)</li>
+                                                    <li>Strings: Text enclosed in quotes (e.g., <code class="code">"hello"</code>)</li>
+                                                    <li>Booleans: <code class="code">true</code> or <code class="code">false</code> values</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="bi bi-plus-slash-minus me-2"></i> Operators
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#jsConceptsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card mb-3">
+                                                    <div class="card-header bg-primary text-white">Arithmetic Operators</div>
+                                                    <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><code class="code">+</code> (addition)</li>
+                                                            <li><code class="code">-</code> (subtraction)</li>
+                                                            <li><code class="code">*</code> (multiplication)</li>
+                                                            <li><code class="code">/</code> (division)</li>
+                                                            <li><code class="code">%</code> (modulus)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card mb-3">
+                                                    <div class="card-header bg-success text-white">Comparison Operators</div>
+                                                    <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><code class="code">==</code> (equality)</li>
+                                                            <li><code class="code">===</code> (strict equality)</li>
+                                                            <li><code class="code">!=</code> (inequality)</li>
+                                                            <li><code class="code">!==</code> (strict inequality)</li>
+                                                            <li><code class="code">&gt;</code>, <code class="code">&lt;</code>, <code class="code">&gt;=</code>, <code class="code">&lt;=</code></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card mb-3">
+                                                    <div class="card-header bg-info text-white">Logical Operators</div>
+                                                    <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><code class="code">&&</code> (AND)</li>
+                                                            <li><code class="code">||</code> (OR)</li>
+                                                            <li><code class="code">!</code> (NOT)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="bi bi-diagram-3 me-2"></i> Control Flow
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#jsConceptsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><i class="bi bi-check2-square me-2"></i>Conditionals</h5>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-primary mb-2">if...else statements</span>
+                                                            <br>Executes different code blocks based on specified conditions
+                                                        </p>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-primary mb-2">switch statement</span>
+                                                            <br>Evaluates an expression and executes code blocks based on matching cases
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><i class="bi bi-arrow-repeat me-2"></i>Loops</h5>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-success mb-2">for loop</span>
+                                                            <br>Creates a loop with three optional expressions
+                                                        </p>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-success mb-2">while loop</span>
+                                                            <br>Creates a loop that executes as long as the condition is true
+                                                        </p>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-success mb-2">do...while loop</span>
+                                                            <br>Executes once before checking the condition
+                                                        </p>
+                                                        <p class="card-text">
+                                                            <span class="badge bg-danger mb-2">break</span>
+                                                            <br>Terminates the current loop or switch statement
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="bi bi-terminal me-2"></i> String Functions
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#jsConceptsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Function</th>
+                                                        <th>Description</th>
+                                                        <th>Example</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code class="code">toUpperCase()</code></td>
+                                                        <td>Converts a string to uppercase letters</td>
+                                                        <td><code class="code">"hello".toUpperCase() // "HELLO"</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="code">toLowerCase()</code></td>
+                                                        <td>Converts a string to lowercase letters</td>
+                                                        <td><code class="code">"HELLO".toLowerCase() // "hello"</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="code">concat()</code></td>
+                                                        <td>Joins two or more strings</td>
+                                                        <td><code class="code">"Hello".concat(" World") // "Hello World"</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="code">trim()</code></td>
+                                                        <td>Removes whitespace from both ends of a string</td>
+                                                        <td><code class="code">"  Hello  ".trim() // "Hello"</code></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <i class="bi bi-journal-code me-2"></i> Common JS Exercises
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#jsConceptsAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><i class="bi bi-123 me-2"></i>Number Operations</h5>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">Comparing numbers and finding larger/smaller values</li>
+                                                            <li class="list-group-item">Calculating sums and averages of user-input numbers</li>
+                                                            <li class="list-group-item">Displaying sequences of numbers between two values</li>
+                                                            <li class="list-group-item">Finding odd numbers in a range</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><i class="bi bi-calculator me-2"></i>Calculation Exercises</h5>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">Finding divisors of a number</li>
+                                                            <li class="list-group-item">Checking if a number is odd or even</li>
+                                                            <li class="list-group-item">Creating multiplication tables</li>
+                                                            <li class="list-group-item">Basic calculator operations (addition, subtraction, multiplication, division)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
