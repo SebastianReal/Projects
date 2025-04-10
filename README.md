@@ -1,10 +1,10 @@
-# 📁 Projects Repository
+# Projects Repository
 
 Welcome! This repository showcases my personal projects across cybersecurity, web development, and programming fundamentals. It’s a collection of hands-on exercises, scripts, and documentation reflecting my continuous learning and exploration in tech.
 
 ---
 
-## 🧭 Table of Contents
+## Table of Contents
 
 - [About This Repository](#about-this-repository)  
 - [Project Categories](#project-categories)  
@@ -20,21 +20,21 @@ This repo serves as a portfolio of diverse tech projects, including ethical hack
 
 ---
 
-## 🧩 Project Categories
+## Project Categories
 
-### 📄 Theory
+### Theory
 | File | Description |
 |--------|-------------|
 | `protection-mechanisms` | A quick overview of possible ways of protecting all OSI layers. |
 | `network-security-fundamentals` | An overview of security fundamentals. |
 
-### 🔐 Cybersecurity Projects
+### Cybersecurity Projects
 | Project | Description |
 |--------|-------------|
 | `reconnaissance` | How to gather information from common sources. |
 | `MITRE: ATT&CK` | Find out what techniques could have been used for a specific attack. |
 
-### 🌐 Web Development Projects
+### Web Development Projects
 | Project | Description |
 |--------|-------------|
 | `html-intro` | Basic HTML page with semantic tags and styling. |
@@ -42,7 +42,7 @@ This repo serves as a portfolio of diverse tech projects, including ethical hack
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. Clone the repo:  
    `git clone https://github.com/SebastianReal/Projects`
@@ -52,7 +52,7 @@ This repo serves as a portfolio of diverse tech projects, including ethical hack
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML & CSS  
 - JavaScript  
