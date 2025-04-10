@@ -21,3 +21,17 @@ After running the website, the architecture looked like this: </br>
 
 <img src="https://github.com/user-attachments/assets/cfd59fbe-0860-4419-aded-4839e5895631" width="500"></br>
 Figure 2. Testing Environment. </br></br>
+
+## High-Level Summary 
+It has identified a total of 9 vulnerabilities within the scope, categorized by severity in the table below.</br>
+
+<img  src="https://github.com/user-attachments/assets/6d012adb-6d9b-4548-8062-5eebb6b000dc" width="500"></br>
+Table 1. Vulnerabilities Classification.</br></br>
+
+The Juice Shop website environment was developed using the JavaScript programming language, Angular, Node.JS Framework, and SQLite Database. The environment contains numerous vulnerabilities, including some serious security flaws such as unencrypted passwords and an easily accessible Admin Account, which makes it possible for threat actors to steal data and perform system takeovers.
+To perfectly assess the task handed to us, two frameworks were used to classify the discovered vulnerabilities: OWASP (Open Worldwide Application Security Project) and NIST SP800-53 (National Institute of Standards and Technology). These are two international frameworks that serve as guidelines to ensure our different systems, networks and applications are robust against attacks. The OWASP Top 10 serves as a standard awareness document aimed at various web developers and web application security that classifies the most common vulnerabilities known to web applications. It is a widespread agreement on the most significant security risks inherent in web applications. NIST SP 800-53 offers a collection of controls that systems and organizations can use to handle the risks associated with information security and privacy.
+Highly important files having sensitive information about the business and clients are easily accessible and visible, putting The Juice Shop at great risk of compliance violation and potentially subjecting it to large fines and/or loss of business reputation.
+Among all the vulnerabilities we have discovered, the most critical ones are SQL Injection and Sensitive Data Exposure. Through these vulnerabilities, an attacker could potentially gain unauthorized access, view sensitive data, and even manipulate the information on The Juice Shop website. To ensure the confidentiality, integrity, and availability of data, it is imperative that security remediations be implemented, as described in the recommendations section.
+
+
+
