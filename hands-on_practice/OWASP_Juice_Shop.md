@@ -12,9 +12,7 @@ The penetration test focused on Juice Shop version 15.3.0 deployed within a Dock
 ## Execution Environment
 To properly perform the penetration testing, it is primordial to have a proper environment
   - Firstly, we had to pull the website using the command docker pull bkimminich/juice-shop. 
-  - Then we typed the command docker run --rm -p 3000:3000 bkimminich/juice-shop. 
-This command enables us to run the website on the local host at the address 127.0.0.1 using port 3000.
+  - Then we typed the command docker run --rm -p 3000:3000 bkimminich/juice-shop. This command enables us to run the website on the local host at the address 127.0.0.1 using port 3000. <br/></br>
 
-<img src="https://github.com/user-attachments/assets/0cc6fa06-17d7-4036-971a-f1c823e31be5" width="500">
-
-![image]()
+<img src="https://github.com/user-attachments/assets/0cc6fa06-17d7-4036-971a-f1c823e31be5" width="500"></br>
+Figure 1. Website running on localhost. </br></br>
