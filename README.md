@@ -54,8 +54,6 @@ This repo serves as a portfolio of diverse tech projects, including ethical hack
 
 ## 🛠️ Technologies Used
 
-- Python  
-- Bash  
 - HTML & CSS  
 - JavaScript  
 - Git / GitHub
