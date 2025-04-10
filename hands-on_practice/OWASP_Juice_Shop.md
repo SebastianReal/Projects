@@ -16,3 +16,8 @@ To properly perform the penetration testing, it is primordial to have a proper e
 
 <img src="https://github.com/user-attachments/assets/0cc6fa06-17d7-4036-971a-f1c823e31be5" width="500"></br>
 Figure 1. Website running on localhost. </br></br>
+
+After running the website, the architecture looked like this: </br>
+
+<img src="https://github.com/user-attachments/assets/cfd59fbe-0860-4419-aded-4839e5895631" width="500"></br>
+Figure 2. Testing Environment. </br></br>
