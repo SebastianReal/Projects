@@ -14,7 +14,7 @@ Welcome! This repository showcases my personal projects across cybersecurity, we
 
 ---
 
-## 📖 About This Repository
+## About This Repository
 
 This repo serves as a portfolio of diverse tech projects, including ethical hacking tools, web development basics, and scripting challenges. Whether it's scanning ports, analyzing logs, or creating web pages with HTML and JavaScript, each folder represents a learning milestone.
 
