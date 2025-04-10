@@ -16,16 +16,23 @@ Welcome! This repository showcases my personal projects across cybersecurity, we
 
 ## 📖 About This Repository
 
-This repo serves as a portfolio of diverse tech projects including ethical hacking tools, web development basics, and scripting challenges. Whether it's scanning ports, analyzing logs, or creating web pages with HTML and JavaScript—each folder represents a learning milestone.
+This repo serves as a portfolio of diverse tech projects, including ethical hacking tools, web development basics, and scripting challenges. Whether it's scanning ports, analyzing logs, or creating web pages with HTML and JavaScript, each folder represents a learning milestone.
 
 ---
 
 ## 🧩 Project Categories
 
+### 📄 Theory
+| File | Description |
+|--------|-------------|
+| `protection-mechanisms` | A quick overview of possible ways of protecting all OSI layers. |
+| `network-security-fundamentals` | An overview of security fundamentals. |
+
 ### 🔐 Cybersecurity Projects
 | Project | Description |
 |--------|-------------|
 | `reconnaissance` | How to gather information from common sources. |
+| `MITRE: ATT&CK` | Find out what techniques could have been used for a specific attack. |
 
 ### 🌐 Web Development Projects
 | Project | Description |
