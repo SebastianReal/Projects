@@ -10,8 +10,7 @@ Welcome! This repository showcases my personal projects across cybersecurity, we
 - [Project Categories](#project-categories)  
 - [How to Use](#how-to-use)  
 - [Technologies Used](#technologies-used)  
-- [Contributing](#contributing)  
-- [License](#license)  
+ 
 
 ---
 
