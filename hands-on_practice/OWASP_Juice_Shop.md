@@ -12,7 +12,7 @@ The penetration test focused on Juice Shop version 15.3.0 deployed within a Dock
 ## Execution Environment
 To properly perform the penetration testing, it is primordial to have a proper environment
   - Firstly, we had to pull the website using the command docker pull bkimminich/juice-shop. 
-  - Then we typed the command docker run --rm -p 3000:3000 bkimminich/juice-shop. This command enables us to run the website on the local host at the address 127.0.0.1 using port 3000. <br/></br>
+  - Then we typed the command docker run --rm -p 3000:3000 bkimminich/juice-shop. This command enables us to run the website on the local host at the address 127.0.0.1 using port 3000. <br/>
 
 <img src="https://github.com/user-attachments/assets/0cc6fa06-17d7-4036-971a-f1c823e31be5" width="500"></br>
 Figure 1. Website running on localhost. </br></br>
@@ -24,7 +24,6 @@ Figure 2. Testing Environment. </br></br>
 
 ## High-Level Summary 
 It has identified a total of 9 vulnerabilities within the scope, categorized by severity in the table below.</br>
-
 <img  src="https://github.com/user-attachments/assets/6d012adb-6d9b-4548-8062-5eebb6b000dc" width="500"></br>
 Table 1. Vulnerabilities Classification.</br></br>
 
@@ -58,3 +57,51 @@ This command will log us into the admin account as shown in the screenshot below
 <img src="https://github.com/user-attachments/assets/046d4a76-a783-4082-ac08-90762fe6f424" width="500"></br>
 Figure 4: Access granted to the admin account.</br></br>
 
+#### Recommendations
+ - Juice Shop should use parameterized queries when interacting with the database backend. A parameterized query is a method whereby the SQL query is differentiated from the user input values. This implies that the input values will no longer be seen as executable code but as simple parameters. Nowadays, parametrized queries are known to be one of the most effective ways to avoid SQL Injection attacks.
+ - Incorporate features into the application to conduct integrity checks on received data. If the data does not align with the anticipated format, it should be rejected.
+ - Also, we strongly recommend the developers make use of the SQL Injection Cheat Sheet using the URL https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html. This will help them get acquainted with the different measures to be taken to avoid SQL Injection.</br></br>
+ 
+### Authorization Bypass
+
+An authorization bypass happens when someone can get around the planned security measures and gain unauthorized access or privileges for specific functions. In simpler terms, it is a security weakness that allows an attacker access to resources or does things without the right permission or proper authentication. The main problem is that the application doesn't validate input properly. When a web app takes input from a user and uses it to get data or grant access, it is crucial for the app to confirm that the user is allowed to do that specific action. Authorization bypass is recognized and classified in the following table. During the penetration tests, two categories of authorization bypass were identified: Coupon fraud and User Role.
+
+#### Coupon Fraud
+The coupon fraud is recognized as authorization bypass, and it is classified in the following table.</br>
+<img src="https://github.com/user-attachments/assets/e8f3736d-275f-4778-b800-6cdfa101bea7" width="500"></br>
+Table 4. Coupon Fraud classification.</br></br>
+
+The ability to obtain a coupon from a chatbot simply by insisting on it indicates a lack of thorough testing before deploying the feature into production. This kind of flaw could potentially allow anyone to exploit the system and receive unauthorized discounts, posing a risk of financial loss for the organization.
+To take advantage of this vulnerability, a person must log into their account and look for ‘Support Chat’ in the left menu.</br>
+
+<img src="https://github.com/user-attachments/assets/d6156d0c-77d6-4c3c-9044-125b9278cf95" width="500"></br>
+Figure 5: Accessing the account.</br></br>
+
+<img src="https://github.com/user-attachments/assets/bf9f845a-7bf7-4e08-a1c8-841f2bd7412c" width="500"></br>
+Figure 6: Looking for an online chat.</br></br>
+
+Once on that webpage, the person must give a name and afterwards ask for a coupon.</br>
+<img src="https://github.com/user-attachments/assets/4e88aab9-b629-4484-9418-3205bef3916a" width="500"></br>
+Figure 7: Giving a name and asking for a coupon.</br></br>
+
+<img src="https://github.com/user-attachments/assets/7f738281-2964-4233-a84c-c99c76bf46d1" width="500"></br>
+Figure 8: Insisting on the request.</br></br>
+
+<img src="https://github.com/user-attachments/assets/82eb7b9a-9e89-4f38-8e34-9862a8429570" width="500"></br>
+Figure 9: Coupon obtained.</br></br>
+
+As shown in the earlier screenshots, by insisting on the coupon, the chatbot gives a 10 % coupon without authorization from the CFO or the person in charge.
+##### Recommendations 
+ - Conduct a thorough test of the features that are going to be implemented before they are launched into production. This way, various vulnerabilities can be discovered and addressed on time.
+ - The adoption of the Least Privilege Principle which involves assigning the minimum necessary permissions to users or systems for their tasks. By doing so, you ensure that users or systems can only perform actions essential to their roles or tasks, reducing the risk of unauthorized or unintended activities.
+
+#### User Role
+The user role is an important aspect of account management. These roles are often linked to an account and transmitted to the database during account creation. An attacker may capture these roles upon account creation and modify them to give privileges to the account being created. The account data in transit during creation is vulnerable to being captured if an attacker is present on the internal network. Therefore, encrypting all information sent over the network is a good practice. If the information is not encrypted and authentication mechanisms are not functioning correctly, sensitive information can be viewed and even manipulated, leading to unauthorized activities.</br> 
+
+<img src="https://github.com/user-attachments/assets/c91e7b56-4f72-4c84-90e1-ac7061c65997" width="500"></br>
+Table 4. User Role Classification.</br></br>
+
+A proxy server must be used; in this case, the tool Burp Suite has its own browser by so it’s not necessary to edit the proxy configurations in a normal web browser. To exploit this vulnerability, the attacker must create a new user.</br>
+
+<img src="https://github.com/user-attachments/assets/85851a10-c8ab-4be0-8c2e-09d38d86c810" width="500"></br>
+Figure 10: Creation of a new account.</br></br>
