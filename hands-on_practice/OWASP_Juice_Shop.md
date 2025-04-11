@@ -1,4 +1,4 @@
-# OWAS JUICE SHOP - REPORT
+# OWASP JUICE SHOP - REPORT
 
 ## Introduction
 This assessment aims to discover and identify vulnerabilities on The Juice Shop’s website and recommend methods to remediate them.
