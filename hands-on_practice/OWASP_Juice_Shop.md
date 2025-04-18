@@ -1,4 +1,4 @@
-# OWASP JUICE SHOP - REPORT
+# OWASP JUICE SHOP - PEN TEST
 
 ## Introduction
 This assessment aims to discover and identify vulnerabilities on The Juice Shop’s website and recommend methods to remediate them.
