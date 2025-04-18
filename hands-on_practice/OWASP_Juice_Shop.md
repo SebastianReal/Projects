@@ -194,7 +194,7 @@ Document Object Model is a web browser-provided programming interface, The DOM a
 Table 5. References for XSS.</br></br>
 
 To assess if the website is subject to this flaw, an HTML label was filled into an input space:
- <h1>Test1 has been here<h1>
+ h1 Test1 has been here h1
 
 The screenshot below gives us the outcome of this HTML tag.
 
